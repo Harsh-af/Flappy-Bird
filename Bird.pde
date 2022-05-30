@@ -2,12 +2,12 @@ class Bird {
   PVector pos;
   PVector vel;
   PVector acc;
-  float r = 16;
+  float r=16;
 
   Bird() {
-    pos = new PVector(50, height/2);
-    vel = new PVector(0, 0);
-    acc = new PVector();
+    pos=new PVector(50, height/2);
+    vel=new PVector(0, 0);
+    acc=new PVector();
   }
 
   void applyForce(PVector force) {
@@ -22,7 +22,7 @@ class Bird {
     acc.mult(0);
 
     if (pos.y > height) {
-      pos.y = height;
+      pos.y=height;
       vel.mult(0);
     }
   }
